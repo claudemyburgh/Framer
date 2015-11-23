@@ -1,0 +1,15 @@
+
+
+[class^="panel-"]
+		padding: $panel-padding
+		border-radius: $panel-radius
+		margin:
+			bottom: $gutter-width * 0.5
+		+grid-box-shadow
+
+
+@each $p in $panels
+	.panel-#{nth($p,1)}
+		background: #{nth($p,2)}
+		border: solid 1px #{nth($p, 3)}
+		color: #{nth($p,4)}

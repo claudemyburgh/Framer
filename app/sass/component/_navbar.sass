@@ -1,0 +1,75 @@
+
+
+/* Navigation classed*/
+#menu-button
+	position: fixed
+	top: 15px
+	left: 15px
+	background: transparent
+	color: transparent
+	height: 30px
+	width: 30px
+	border: none
+	outline: none
+	z-index: 10005
+	transition: all 0.3s ease
+	transform: translate3d(0px,0px,0)
+	cursor: pointer
+	&::before
+		content: ""
+		position: absolute
+		top: 5px
+		left: 5px
+		right: 5px
+		bottom: 5px
+		background: linear-gradient(#fff 20%, transparent 20%, transparent 40%, #fff 40%, #fff 60%, transparent 60%, transparent 80%, #fff 80%)
+	&:hover
+		color: #fff
+		text-indent: 30px
+		height: 35px
+
+
+
+
+.fixed-top-navbar
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	background: $primary-color
+	width: 100%
+	height: $fixed-top-navbar-height
+	z-index: 9998
+	+grid-box-shadow
+
+#close-nav
+	position: absolute
+	top: 15px
+	right: 0px
+	font-size: 28px
+	color: color(white)
+	transition: transform 0.3s ease-in-out
+	transform: rotate(0deg)
+
+	&:hover
+		transform: rotate(180deg)
+
+
+
+
+.overlay
+	position: relative
+	z-index: 9998
+	width: 100%
+	&::after
+		position: fixed
+		content: ''
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background: rgba(color(darkgray), 0.75)
+		z-index: 1000
+		display: block
+		transform: translate3d(0, 0,0)
+		transition: transform 0.5s ease

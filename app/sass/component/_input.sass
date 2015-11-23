@@ -1,0 +1,39 @@
+.input-wrap
+	padding: 5px
+
+
+.input-wrap-full
+	padding: 5px
+	margin-left: -$gutter-width / 2
+	margin-right: -$gutter-width / 2
+
+::placeholder
+	color: color(lightgray)
+
+label
+	width: 100%
+	padding: 5px
+	display: block
+	color: rgba(color(darkgray), 0.75)
+
+
+input
+	width: 100%
+	line-height: 2
+	padding: 5px
+	border-radius: $border-radius
+	border: solid 1px rgba(color(darkgray), 0.25)
+
+	&:focus
+		border: solid 1px rgba(color(darkgray), 0.5)
+		outline-color: $primary-color
+		background: rgba($primary-color, 0.05)
+
+
+input[type="button"]
+	background: $primary-color
+	color: color(white)
+	display: inline-block
+	&:hover
+		background: darken($primary-color, 2%)
+		text-decoration: none !important

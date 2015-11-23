@@ -1,0 +1,44 @@
+
+.card
+	background: color(white)
+	display: flex
+	flex-direction: column
+	+grid-box-shadow
+	margin-bottom: $gutter-width
+	border-radius: $border-radius
+	overflow: hidden
+	figure.card-figure
+		display: block
+		margin: 0
+		padding: 0
+		overflow: hidden
+		a
+			cursor: zoom-in
+		img
+			max-width: 100%
+			display: block
+			transition: transform 0.3s ease-in-out
+			transform: scale(1)
+
+			&:hover
+				transform: scale(1.3)
+
+	header.card-header
+		background: color(lightgray)
+		border-bottom: 1px solid darken(color(lightgray), 5%)
+		@for $i from 1 through 6
+			h#{$i}
+				color: color(darkgray)
+				padding: 0 $gutter-width / 2
+				font-weight: bolder
+	section.card-body
+		background: color(white)
+		color: color(darkgray)
+		padding: $gutter-width / 2
+	footer.card-footer
+		background: darken(color(white), 2%)
+		border-top: 1px solid darken(color(white), 5%)
+		padding: $gutter-width / 2
+		color: color(red)
+		display: flex
+		justify-content: flex-end

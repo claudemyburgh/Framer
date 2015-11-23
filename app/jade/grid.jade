@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Document
+	link(rel="stylesheet", href="css/style.css")
+body
+	include inc/navbar.jade
+
+
+	.main-wrapper
+		.wrapper.no-gutter-wrap.padding
+			.row
+				.sm-col-12.text-center
+					h1 Grid Layout
+
+			.row
+				.md-col-4.panel-primary.text-center Column 4
+				.md-col-4.panel-primary.text-center Column 4
+				.md-col-4.panel-primary.text-center Column 4
+
+
+			.row
+				.lg-col-6.panel-primary.text-center Column 6
+				.lg-col-6.panel-primary.text-center Column 6
+
+			.row
+				.lg-col-1.panel-primary.text-center C 1
+				.lg-col-2.panel-primary.text-center Col 2
+				.lg-col-3.panel-primary.text-center Column 3
+				.lg-col-4.panel-primary.text-center Column 4
+				.lg-col-2.panel-primary.text-center Col 2
+
+			.row
+				.lg-col-6.panel-primary.text-center Column 6
+				.lg-col-6.panel-primary.text-center Column 6
+
+			.row
+				.lg-col-12.panel-primary.text-center Column 12
+
+
+		.wrapper.padding
+			.row
+				.sm-col-12.text-center
+					h1 Grid Layout with Gutter
+
+			.row
+				.md-col-4
+					.panel-primary.text-center Column 4
+				.md-col-4
+					.panel-primary.text-center Column 4
+				.md-col-4
+					.panel-primary.text-center Column 4
+
+
+			.row
+				.lg-col-6
+					.panel-primary.text-center Column 6
+				.lg-col-6
+					.panel-primary.text-center Column 6
+
+			.row
+				.lg-col-1
+					.panel-primary.text-center C 1
+				.lg-col-2
+					.panel-primary.text-center Col 2
+				.lg-col-3
+					.panel-primary.text-center Column 3
+				.lg-col-4
+					.panel-primary.text-center Column 4
+				.lg-col-2
+					.panel-primary.text-center Col 2
+
+			.row
+				.lg-col-6
+					.panel-primary.text-center Column 6
+				.lg-col-6
+					.panel-primary.text-center Column 6
+
+			.row
+				.lg-col-12
+					.panel-primary.text-center Column 12
+
+		.wrapper.padding.push-and-pull
+			.row
+				.sm-col-12.text-center
+					h1 Grid Layout
+					h2 Pushing Elements
+
+			.row
+				.md-col-4.md-offset-2
+					.panel-primary.text-center Column 4 | Offset 2
+				.md-col-4
+					.panel-primary.text-center Column 4
+
+
+
+			.row
+				.lg-col-6
+					.panel-primary.text-center Column 6
+				.lg-col-6
+					.panel-primary.text-center Column 6
+
+			.row
+
+				.lg-col-2
+					.panel-primary.text-center Column 3
+				.lg-col-3.lg-offset-1
+					.panel-primary.text-center Column 3 | Offset 1
+				.lg-col-3
+					.panel-primary.text-center Column 3 | Offset 1
+				.lg-col-2
+					.panel-primary.text-center Col 2
+
+			.row
+				.lg-col-6
+					.panel-primary.text-center Column 6
+				.lg-col-6
+					.panel-primary.text-center Column 6
+
+			.row
+				.lg-col-6.push-right
+					.panel-primary.text-center Column 6
+
+
+
+
+	include inc/footer.jade

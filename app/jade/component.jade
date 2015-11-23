@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Document
+	link(rel="stylesheet", href="css/style.css")
+body
+	include inc/navbar.jade
+
+
+	.main-wrapper
+		.full-width-primary.padding
+			.wrapper
+				.row
+					.sm-col-12.text-center
+						h1 UI Component
+		.wrapper.padding
+			.row
+				.sm-col-12
+					h2.text-center Buttons
+			.row.text-center
+				.lg-col-6
+					a(href="#").btn Button
+					a(href="#").btn.secondary-btn Button
+					a(href="#").btn.primary-btn Button
+
+				.lg-col-6
+					a(href="#").btn.rounded-btn Button
+					a(href="#").btn.primary-btn.rounded-btn Button
+					a(href="#").btn.secondary-btn.rounded-btn Button
+					
+			.row.text-center.padding
+				.lg-col-6
+					a(href="#").btn Button <span class="btn-with-icon"><i class="fa fa-download"></i></span>
+					a(href="#").btn.secondary-btn Button <span class="btn-with-icon"><i class="fa fa-download"></i></span>
+					a(href="#").btn.primary-btn Button <span class="btn-with-icon"><i class="fa fa-download"></i></span>
+
+				.lg-col-6
+					a(href="#").btn.rounded-btn Button
+					a(href="#").btn.primary-btn.rounded-btn Button
+					a(href="#").btn.secondary-btn.rounded-btn Button
+
+			.row.text-center
+				.lg-col-6
+					a(href="#").btn-small Button
+					a(href="#").btn.secondary-btn Button
+					a(href="#").btn-large.primary-btn Button
+
+				.lg-col-6
+					a(href="#").btn-small.rounded-btn Button
+					a(href="#").btn.primary-btn.rounded-btn Button
+					a(href="#").btn-large.secondary-btn.rounded-btn Button
+
+
+	.full-width-primary.padding
+		.wrapper
+			.row
+				.sm-col-12.text-center
+					h1 Input Fields
+
+
+	.wrapper
+		.row.padding
+			.lg-col-8.lg-offset-2
+				.md-col-6
+					.input-wrap-full
+						label Name
+						input(type="text", placeholder="Name")
+				.md-col-6
+					.input-wrap-full
+						label Name
+						input(type="text", placeholder="Name")
+				.input-wrap
+					label Name
+					input(type="text", placeholder="Name")
+				.input-wrap
+					label Name
+					input(type="text", placeholder="Name")
+				.input-wrap
+					input(type="button", value="Button")
+
+
+	.full-width-primary.padding
+		.wrapper
+			.row
+				.sm-col-12.text-center
+					h1 Masonry Fields
+
+	.wrapper
+		.rows.masonry.padding
+			.sm-col-12.md-col-6.lg-col-3.xl-col-2
+				.card
+					header.card-header 
+						h3 Headeing Card
+					section.card-body  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!
+					footer.card-footer <a class="btn primary-btn href="#">Button</a>
+
+			.sm-col-12.md-col-6.lg-col-3.xl-col-2
+				.card
+					figure.card-figure
+						a(href="#")
+							img(src="img/grid/1.jpg", alt="")
+
+					section.card-body  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!
+					footer.card-footer <a class="btn primary-btn href="#">Button</a>
+			.sm-col-12.md-col-6.lg-col-3.xl-col-2
+				.card
+					header.card-header 
+						h3 Headeing Card
+					section.card-body  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!
+					footer.card-footer <a class="btn primary-btn href="#">Button</a>
+
+			.sm-col-12.md-col-6.lg-col-3.xl-col-2
+				.card
+					figure.card-figure
+						img(src="img/grid/2.jpg", alt="")
+					section.card-body  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!
+					footer.card-footer <a class="btn primary-btn href="#">Button</a>
+			.sm-col-12.md-col-6.lg-col-3.xl-col-2
+				.card
+					header.card-header 
+						h3 Headeing Card
+					section.card-body  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!
+					footer.card-footer <a class="btn primary-btn href="#">Button</a>
+
+			.sm-col-12.md-col-6.lg-col-3.xl-col-2
+				.card
+					figure.card-figure
+						img(src="img/grid/3.jpg", alt="")
+					section.card-body  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!
+					footer.card-footer <a class="btn primary-btn href="#">Button</a>
+					
+			.sm-col-12.md-col-6.lg-col-3.xl-col-2
+				.card
+					figure.card-figure
+						img(src="img/grid/4.jpg", alt="")
+					header.card-header 
+						h3 Headeing Card	
+					section.card-body  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!
+					footer.card-footer <a class="btn primary-btn href="#">Button</a>
+					
+			.sm-col-12.md-col-6.lg-col-3.xl-col-2
+				.card
+					figure.card-figure
+						img(src="img/grid/5.jpg", alt="")
+					section.card-body  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!
+					footer.card-footer <a class="btn primary-btn href="#">Button</a>
+					
+			.sm-col-12.md-col-6.lg-col-3.xl-col-2
+				.card
+					figure.card-figure
+						img(src="img/grid/6.jpg", alt="")
+					section.card-body  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!
+					footer.card-footer <a class="btn primary-btn href="#">Button</a>
+
+			.sm-col-12.md-col-6.lg-col-3.xl-col-2
+				.card
+					header.card-header 
+						h3 Headeing Card
+					section.card-body  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!
+					footer.card-footer <a class="btn primary-btn href="#">Button</a>
+
+			.sm-col-12.md-col-6.lg-col-3.xl-col-2
+				.card
+					header.card-header 
+						h3 Headeing Card
+					figure.card-figure
+						img(src="img/grid/7.jpg", alt="")
+					section.card-body  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!
+					footer.card-footer <a class="btn primary-btn href="#">Button</a>
+			.sm-col-12.md-col-6.lg-col-3.xl-col-2
+				.card
+					figure.card-figure
+						img(src="img/grid/8.jpg", alt="")
+					section.card-body  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!
+					footer.card-footer <a class="btn primary-btn href="#">Button</a>
+			.sm-col-12.md-col-6.lg-col-3.xl-col-2
+				.card
+					figure.card-figure
+						img(src="img/grid/9.jpg", alt="")
+					section.card-body  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!
+					footer.card-footer <a class="btn primary-btn href="#">Button</a>
+			.sm-col-12.md-col-6.lg-col-3.xl-col-2
+				.card
+					figure.card-figure
+						img(src="img/grid/10.jpg", alt="")
+					section.card-body  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!
+					footer.card-footer <a class="btn primary-btn href="#">Button</a>
+			.sm-col-12.md-col-6.lg-col-3.xl-col-2
+				.card
+					figure.card-figure
+						img(src="img/grid/11.jpg", alt="")
+					section.card-body  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!
+					footer.card-footer <a class="btn primary-btn href="#">Button</a>
+
+			.sm-col-12.md-col-6.lg-col-3.xl-col-2
+				.card
+					header.card-header 
+						h3 Headeing Card
+					section.card-body  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!
+					footer.card-footer <a class="btn primary-btn href="#">Button</a>
+
+	include inc/footer.jade
+
+	script.
+		$('.masonry').masonry();

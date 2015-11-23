@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <nav class="nav-wrapper"><a href="#" id="close-nav"><i class="fa fa-fw fa-close"></i></a>
+    <div class="icon-list">
+      <ul>
+        <li><a href="index.html"><i class="fa fa-fw fa-star-o"></i> <span>Home</span></a></li>
+        <li><a href="grid.html"><i class="fa fa-fw fa-newspaper-o"></i> <span>Layout</span></a></li>
+        <li><a href="component.html"><i class="fa fa-fw fa-bell-o"></i> <span>Componants</span></a></li>
+        <li><a href="#"><i class="fa fa-fw fa-comment-o"></i> <span>Sections</span></a></li>
+        <li><a href="#"><i class="fa fa-fw fa-bar-chart-o"></i> <span>About Us</span></a></li>
+      </ul>
+    </div>
+    <div id="morph-shape" data-morph-open="M-1,0h101c0,0,0-1,0,395c0,404,0,405,0,405H-1V0z" class="morph-shape">
+      <svg id="svg-menu" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
+      	<path d="M-1,0h101c0,0-97.833,153.603-97.833,396.167C2.167,627.579,100,800,100,800H-1V0z"/>
+      </svg>
+      
+    </div>
+  </nav>
+  <nav class="fixed-top-navbar">
+    <button id="menu-button">Menu</button>
+  </nav>
+  <div class="main-wrapper">
+    <div class="wrapper no-gutter-wrap padding">
+      <div class="row">
+        <div class="sm-col-12 text-center">
+          <h1>Grid Layout</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="md-col-4 panel-primary text-center">Column 4</div>
+        <div class="md-col-4 panel-primary text-center">Column 4</div>
+        <div class="md-col-4 panel-primary text-center">Column 4</div>
+      </div>
+      <div class="row">
+        <div class="lg-col-6 panel-primary text-center">Column 6</div>
+        <div class="lg-col-6 panel-primary text-center">Column 6</div>
+      </div>
+      <div class="row">
+        <div class="lg-col-1 panel-primary text-center">C 1</div>
+        <div class="lg-col-2 panel-primary text-center">Col 2</div>
+        <div class="lg-col-3 panel-primary text-center">Column 3</div>
+        <div class="lg-col-4 panel-primary text-center">Column 4</div>
+        <div class="lg-col-2 panel-primary text-center">Col 2</div>
+      </div>
+      <div class="row">
+        <div class="lg-col-6 panel-primary text-center">Column 6</div>
+        <div class="lg-col-6 panel-primary text-center">Column 6</div>
+      </div>
+      <div class="row">
+        <div class="lg-col-12 panel-primary text-center">Column 12</div>
+      </div>
+    </div>
+    <div class="wrapper padding">
+      <div class="row">
+        <div class="sm-col-12 text-center">
+          <h1>Grid Layout with Gutter</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="md-col-4">
+          <div class="panel-primary text-center">Column 4</div>
+        </div>
+        <div class="md-col-4">
+          <div class="panel-primary text-center">Column 4</div>
+        </div>
+        <div class="md-col-4">
+          <div class="panel-primary text-center">Column 4</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="lg-col-6">
+          <div class="panel-primary text-center">Column 6</div>
+        </div>
+        <div class="lg-col-6">
+          <div class="panel-primary text-center">Column 6</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="lg-col-1">
+          <div class="panel-primary text-center">C 1</div>
+        </div>
+        <div class="lg-col-2">
+          <div class="panel-primary text-center">Col 2</div>
+        </div>
+        <div class="lg-col-3">
+          <div class="panel-primary text-center">Column 3</div>
+        </div>
+        <div class="lg-col-4">
+          <div class="panel-primary text-center">Column 4</div>
+        </div>
+        <div class="lg-col-2">
+          <div class="panel-primary text-center">Col 2</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="lg-col-6">
+          <div class="panel-primary text-center">Column 6</div>
+        </div>
+        <div class="lg-col-6">
+          <div class="panel-primary text-center">Column 6</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="lg-col-12">
+          <div class="panel-primary text-center">Column 12</div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper padding push-and-pull">
+      <div class="row">
+        <div class="sm-col-12 text-center">
+          <h1>Grid Layout</h1>
+          <h2>Pushing Elements</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="md-col-4 md-offset-2">
+          <div class="panel-primary text-center">Column 4 | Offset 2</div>
+        </div>
+        <div class="md-col-4">
+          <div class="panel-primary text-center">Column 4</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="lg-col-6">
+          <div class="panel-primary text-center">Column 6</div>
+        </div>
+        <div class="lg-col-6">
+          <div class="panel-primary text-center">Column 6</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="lg-col-2">
+          <div class="panel-primary text-center">Column 3</div>
+        </div>
+        <div class="lg-col-3 lg-offset-1">
+          <div class="panel-primary text-center">Column 3 | Offset 1</div>
+        </div>
+        <div class="lg-col-3">
+          <div class="panel-primary text-center">Column 3 | Offset 1</div>
+        </div>
+        <div class="lg-col-2">
+          <div class="panel-primary text-center">Col 2</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="lg-col-6">
+          <div class="panel-primary text-center">Column 6</div>
+        </div>
+        <div class="lg-col-6">
+          <div class="panel-primary text-center">Column 6</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="lg-col-6 push-right">
+          <div class="panel-primary text-center">Column 6</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="row text-center">
+      <p>Designed and developed by <a href="#">DesignByCode</a></p>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+  <script>
+    $('#menu-button').offCanvasMenu();
+    $('window').smoothMouseScroll({
+    	'speed' : 700,
+    	'distance': 250
+    	});
+  </script>
+</body>

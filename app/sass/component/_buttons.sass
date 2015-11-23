@@ -1,0 +1,120 @@
+
+
+.btn
+	position: relative
+	display: inline-block
+	line-height: 3
+	color: color(darkgray) !important
+	background: color(lightgray)
+	border: darken(color(lightgray), 2%) 1px solid
+	padding-left: 24px
+	padding-right: 24px
+	font-weight: bolder
+	text-shadow: color(white) 0 1px 1px
+	+grid-box-shadow
+	overflow: hidden
+	cursor: pointer
+	&::after
+		position: absolute
+		width: 100%
+		height: 100%
+		display: block
+		content: ""
+		top: 100%
+		left: 0
+		background: rgba(color(darkgray), 0.25)
+		transition: all 0.2s ease-in-out
+	&:hover
+		background: darken(color(lightgray), 2%)
+		text-decoration: none !important
+		&::after
+			top: 0
+
+
+.btn-small
+	position: relative
+	display: inline-block
+	line-height: 2
+	color: color(darkgray) !important
+	background: color(lightgray)
+	border: darken(color(lightgray), 2%) 1px solid
+	padding-left: 16px
+	padding-right: 16px
+	font-weight: bolder
+	text-shadow: color(white) 0 1px 1px
+	+grid-box-shadow
+	overflow: hidden
+	&::after
+		position: absolute
+		width: 100%
+		height: 100%
+		display: block
+		content: ""
+		top: 100%
+		left: 0
+		background: rgba(color(darkgray), 0.25)
+		transition: all 0.2s ease-in-out
+	&:hover
+		background: darken(color(lightgray), 2%)
+		text-decoration: none !important
+		&::after
+			top: 0
+
+
+.btn-large
+	position: relative
+	display: inline-block
+	line-height: 4
+	color: color(darkgray) !important
+	background: color(lightgray)
+	border: darken(color(lightgray), 2%) 1px solid
+	padding-left: 32px
+	padding-right: 32px
+	font-weight: bolder
+	text-shadow: color(white) 0 1px 1px
+	+grid-box-shadow
+	overflow: hidden
+	&::after
+		position: absolute
+		width: 100%
+		height: 100%
+		display: block
+		content: ""
+		top: 100%
+		left: 0
+		background: rgba(color(darkgray), 0.25)
+		transition: all 0.2s ease-in-out
+
+	&:hover
+		background: darken(color(lightgray), 2%)
+		text-decoration: none !important
+		&::after
+			top: 0
+
+
+
+.rounded-btn
+	border-radius: 60px
+	padding-left: 32px
+	padding-right: 32px
+
+.primary-btn
+	background: $primary-color !important
+	color: $primary-on-text !important
+	border: darken($primary-color, 2%) 1px solid !important
+	text-shadow: color(black) 0 1px 1px
+	&:hover
+		background: darken($primary-color, 4%)	!important
+
+.secondary-btn
+	background: $secondary-color !important
+	color: $secondary-on-text !important
+	border: darken($secondary-color, 2%) 1px solid !important
+	text-shadow: color(black) 0 1px 1px
+	&:hover
+		background: darken($secondary-color, 4%)	!important
+
+
+.btn-with-icon
+	float: right
+	padding: 0 0 0 12px
