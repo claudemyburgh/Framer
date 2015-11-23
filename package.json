@@ -1,0 +1,39 @@
+{
+  "name": "boxgrid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claudemyburgh/boxGrid.git"
+  },
+  "keywords": [
+    "responsive",
+    "grid"
+  ],
+  "author": "Claude Myburgh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/claudemyburgh/boxGrid/issues"
+  },
+  "homepage": "https://github.com/claudemyburgh/boxGrid#readme",
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-htmlmin": "^1.2.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.1.0",
+    "gulp-uglify": "^1.5.1",
+    "jade": "^1.11.0"
+  },
+  "dependencies": {
+    "gulp-iconfont": "^5.0.0"
+  }
+}

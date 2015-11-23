@@ -9,9 +9,9 @@ bower_components
 
 ## Temporary Disabled
 #build
-bower.json
-README.md
-package.json
+#bower.json
+#README.md
+#package.json
 
 ## IMAGES ##
 .psd

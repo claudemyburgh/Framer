@@ -1,0 +1,27 @@
+{
+  "name": "boxGrid",
+  "authors": [
+    "claudemyburgh <claudemyburgh@gmail.com>"
+  ],
+  "description": "Box Grid responsive grid",
+  "main": "",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/claudemyburgh/boxGrid",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "font-awesome": "fontawesome#~4.4.0",
+    "normalize-css": "normalize.css#~3.0.3",
+    "masonry": "~3.3.2"
+  }
+}
