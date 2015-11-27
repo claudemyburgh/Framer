@@ -4,6 +4,7 @@
   <meta charset="UTF-8"/>
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="prettify/styles/sunburst.css"/>
 </head>
 <body>
   <nav class="nav-wrapper"><a href="#" id="close-nav"><i class="fa fa-fw fa-close"></i></a>
@@ -20,10 +21,10 @@
       <svg id="svg-menu" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
       	<path d="M-1,0h101c0,0-97.833,153.603-97.833,396.167C2.167,627.579,100,800,100,800H-1V0z"/>
       </svg>
-      
+
     </div>
   </nav>
-  <nav class="fixed-top-navbar">
+  <nav class="navbar navbar-fixed">
     <button id="menu-button">Menu</button>
   </nav>
   <div class="main-wrapper">
@@ -55,6 +56,28 @@
       </div>
       <div class="row">
         <div class="lg-col-12 panel-primary text-center">Column 12</div>
+      </div>
+      <div class="row">
+        <pre class="prettyprint">&lt;div class=&quot;row&quot;&gt;
+&Tab;&lt;div class=&quot;md-col-4 panel-primary text-center&quot;&gt;Column 4&lt;/div&gt;
+&Tab;&lt;div class=&quot;md-col-4 panel-primary text-center&quot;&gt;Column 4&lt;/div&gt;
+&Tab;&lt;div class=&quot;md-col-4 panel-primary text-center&quot;&gt;Column 4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&Tab;&lt;div class=&quot;lg-col-6 panel-primary text-center&quot;&gt;Column 6&lt;/div&gt;
+&Tab;&lt;div class=&quot;lg-col-6 panel-primary text-center&quot;&gt;Column 6&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&Tab;&lt;div class=&quot;lg-col-1 panel-primary text-center&quot;&gt;C 1&lt;/div&gt;
+&Tab;&lt;div class=&quot;lg-col-2 panel-primary text-center&quot;&gt;Col 2&lt;/div&gt;
+&Tab;&lt;div class=&quot;lg-col-3 panel-primary text-center&quot;&gt;Column 3&lt;/div&gt;
+&Tab;&lt;div class=&quot;lg-col-4 panel-primary text-center&quot;&gt;Column 4&lt;/div&gt;
+&Tab;&lt;div class=&quot;lg-col-2 panel-primary text-center&quot;&gt;Col 2&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+</pre>
       </div>
     </div>
     <div class="wrapper padding">
@@ -175,7 +198,10 @@
     $('#menu-button').offCanvasMenu();
     $('window').smoothMouseScroll({
     	'speed' : 700,
-    	'distance': 250
+    	'distance': 250,
+    	'easing': 'easeOutQuad'
     	});
   </script>
+  <script src="prettify/src/prettify.js"></script>
+  <script>prettyPrint();	</script>
 </body>

@@ -89,7 +89,8 @@
 
     opt = $.extend({
       'speed': 500,
-      'distance': 250
+      'distance': 250,
+      'easing': 'swing'
     }, options);
 
       	if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
@@ -111,7 +112,7 @@
       	    // Dom where it will apply
       	    $('html, body').stop().animate({
       	        scrollTop: $(window).scrollTop() - (distance * delta)
-      	    }, time );
+      	    }, time, opt.easing );
       	}
 
 

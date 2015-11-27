@@ -4,6 +4,7 @@ head
 	meta(charset="UTF-8")
 	title Document
 	link(rel="stylesheet", href="css/style.css")
+	link(rel="stylesheet", href="prettify/styles/desert.css")
 body
 	include inc/navbar.jade
 
@@ -37,6 +38,27 @@ body
 
 			.row
 				.lg-col-12.panel-primary.text-center Column 12
+				
+			.row 
+				pre.prettyprint.linenum:4. 
+					&lt;div class=&quot;row&quot;&gt;  
+					&Tab;&lt;div class=&quot;md-col-4 panel-primary text-center&quot;&gt;Column 4&lt;/div&gt; 
+					&Tab;&lt;div class=&quot;md-col-4 panel-primary text-center&quot;&gt;Column 4&lt;/div&gt; 
+					&Tab;&lt;div class=&quot;md-col-4 panel-primary text-center&quot;&gt;Column 4&lt;/div&gt; 
+					&lt;/div&gt; 
+					&lt;div class=&quot;row&quot;&gt; 
+					&Tab;&lt;div class=&quot;lg-col-6 panel-primary text-center&quot;&gt;Column 6&lt;/div&gt; 
+					&Tab;&lt;div class=&quot;lg-col-6 panel-primary text-center&quot;&gt;Column 6&lt;/div&gt; 
+					&lt;/div&gt; 
+					&lt;div class=&quot;row&quot;&gt; 
+					&Tab;&lt;div class=&quot;lg-col-1 panel-primary text-center&quot;&gt;C 1&lt;/div&gt; 
+					&Tab;&lt;div class=&quot;lg-col-2 panel-primary text-center&quot;&gt;Col 2&lt;/div&gt; 
+					&Tab;&lt;div class=&quot;lg-col-3 panel-primary text-center&quot;&gt;Column 3&lt;/div&gt; 
+					&Tab;&lt;div class=&quot;lg-col-4 panel-primary text-center&quot;&gt;Column 4&lt;/div&gt; 
+					&Tab;&lt;div class=&quot;lg-col-2 panel-primary text-center&quot;&gt;Col 2&lt;/div&gt; 
+					&lt;/div&gt; 
+					
+							
 
 
 		.wrapper.padding
@@ -126,3 +148,8 @@ body
 
 
 	include inc/footer.jade
+	
+	script(src="prettify/src/prettify.js")
+	
+	script.
+		//prettyPrint();	

@@ -1,16 +1,16 @@
 {
-  "name": "boxGrid",
+  "name": "Framer.io",
   "authors": [
     "claudemyburgh <claudemyburgh@gmail.com>"
   ],
-  "description": "Box Grid responsive grid",
-  "main": "",
+  "description": "Framer is a mobile first responsive grid",
+  "main": ['app/sass/_init.sass'],
   "moduleType": [
     "node"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/claudemyburgh/boxGrid",
-  "private": true,
+  "homepage": "http://claudemyburgh.github.io/Framer/build/index.html",
+  "private": false,
   "ignore": [
     "**/.*",
     "node_modules",

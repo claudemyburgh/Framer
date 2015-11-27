@@ -1,2 +1,45 @@
 @import "init"
 @import "frontpage"
+
+
+.testbody
+	background: color(lightgray)
+
+
+
+.pad
+	padding: $gutter-width  / 2
+
+
+
+
+.menu
+	padding: 0
+	margin-left: -$gutter-width !important
+
+
+.close
+	background: color(teal)
+	position: absolute
+	width: 30px
+	height: 30px
+	display: block
+	top: 0
+	right: 0
+	//overflow: hidden
+	border-radius: 100%
+	box-shadow: rgba(color(black), 0.25) 0 3px 5px
+	cursor: pointer
+
+	&::after
+		position: absolute
+		content: 'X'
+		width: 100%
+		height: 100%
+		display: block
+		top: 0
+		left: 0
+		color: #fff
+		text-align: center
+		line-height: 30px
+		font-weight: bold
