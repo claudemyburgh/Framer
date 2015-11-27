@@ -1,10 +1,12 @@
 
 
-[class^="panel-"]
+[class^="panel"]
 		padding: $panel-padding
 		border-radius: $panel-radius
+		background: red
 		margin:
-			bottom: $gutter-width * 0.5
+			top: $gutter-width /2
+			bottom: $gutter-width /2
 		+grid-box-shadow
 
 
@@ -13,3 +15,11 @@
 		background: #{nth($p,2)}
 		border: solid 1px #{nth($p, 3)}
 		color: #{nth($p,4)}
+
+
+.paper
+	background: color(white)
+	border: darken(color(white), 2%) solid 1px
+	box-shadow: rgba(color(black), 0.1) 0 0 10px, rgba(color(black), 0.25) 0 0 3px
+	padding: $gutter-width
+	margin: $gutter-width / 2   0 

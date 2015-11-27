@@ -54,6 +54,7 @@ gulp.task('sass', function(){
 		.pipe(autoprefixer())
 		.pipe(gulp.dest(paths.build + '/css'))
     .pipe(reload({stream: true}));
+
 });
 
 /* Script Minification  */
@@ -70,6 +71,8 @@ gulp.task('scripts', function(){
   .pipe(uglify())
   .pipe(gulp.dest(paths.build + '/js'))
   .pipe(reload({stream: true}));
+
+
 
 
 });

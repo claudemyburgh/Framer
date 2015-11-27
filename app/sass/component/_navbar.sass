@@ -31,16 +31,35 @@
 
 
 
-.fixed-top-navbar
+.navbar
+	background: $primary-color
+	width: 100%
+	height: $navbar-height
+	z-index: 9998
+	+grid-box-shadow
+
+.navbar-fixed
 	position: fixed
 	top: 0
 	left: 0
 	right: 0
-	background: $primary-color
-	width: 100%
-	height: $fixed-top-navbar-height
-	z-index: 9998
-	+grid-box-shadow
+
+	ul
+		margin: 0
+		list-style: none
+
+		li
+			display: inline-block
+			line-height: $navbar-height
+			margin: 0 1em
+
+			a
+				color: $secondary-on-text
+				&:hover
+					text-decoration: none
+					color: rgba($secondary-on-text, 0.5)
+
+
 
 #close-nav
 	position: absolute

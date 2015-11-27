@@ -6,7 +6,7 @@ Design one webpage that dynamically will adapt  to your mobile phone, tablet or 
 Framer makes it easy to create a simple breakpoint by adding a class to your html element.
 
 See [Framer.io](http://framer.io) for documentation, demo and real world projects
-
+[Demo Pages](http://claudemyburgh.github.io/Framer/build/index.html)
 ## Install
 ### Download
 + Clone from Github:  ` git clone http://github.com/claudemyburgh/framer `
