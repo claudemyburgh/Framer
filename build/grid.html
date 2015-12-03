@@ -2,18 +2,21 @@
 <html lang="en"></html>
 <head>
   <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css"/>
-  <link rel="stylesheet" href="prettify/styles/sunburst.css"/>
+  <link rel="stylesheet" href="prettify/styles/desert.css"/>
 </head>
 <body>
   <nav class="nav-wrapper"><a href="#" id="close-nav"><i class="fa fa-fw fa-close"></i></a>
     <div class="icon-list">
       <ul>
         <li><a href="index.html"><i class="fa fa-fw fa-star-o"></i> <span>Home</span></a></li>
-        <li><a href="grid.html"><i class="fa fa-fw fa-newspaper-o"></i> <span>Layout</span></a></li>
+        <li><a href="grid.html"><i class="fa fa-fw fa-columns"></i> <span>Layout</span></a></li>
         <li><a href="component.html"><i class="fa fa-fw fa-bell-o"></i> <span>Componants</span></a></li>
-        <li><a href="#"><i class="fa fa-fw fa-comment-o"></i> <span>Sections</span></a></li>
+        <li><a href="#"><i class="fa fa-fw fa-connectdevelop"></i> <span>Sections</span></a></li>
+        <li><a href="test.html"><i class="fa fa-fw fa-cloud"></i> <span>Box Layout</span></a></li>
+        <li><a href="parallax.html"><i class="fa fa-fw fa-arrows"></i> <span>Parallax</span></a></li>
         <li><a href="#"><i class="fa fa-fw fa-bar-chart-o"></i> <span>About Us</span></a></li>
       </ul>
     </div>
@@ -21,7 +24,7 @@
       <svg id="svg-menu" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
       	<path d="M-1,0h101c0,0-97.833,153.603-97.833,396.167C2.167,627.579,100,800,100,800H-1V0z"/>
       </svg>
-
+      
     </div>
   </nav>
   <nav class="navbar navbar-fixed">
@@ -58,25 +61,22 @@
         <div class="lg-col-12 panel-primary text-center">Column 12</div>
       </div>
       <div class="row">
-        <pre class="prettyprint">&lt;div class=&quot;row&quot;&gt;
-&Tab;&lt;div class=&quot;md-col-4 panel-primary text-center&quot;&gt;Column 4&lt;/div&gt;
-&Tab;&lt;div class=&quot;md-col-4 panel-primary text-center&quot;&gt;Column 4&lt;/div&gt;
-&Tab;&lt;div class=&quot;md-col-4 panel-primary text-center&quot;&gt;Column 4&lt;/div&gt;
-&lt;/div&gt;
+        <div class="sm-col-12 paper">
+          <h1>Structure your html to create a mobile first grid layout</h1>
+          <p>By default Framer is a 12 column grid, but this can easaliy be changed to a 16 column grid in seconds. css classes can be stacked to create multipale layout for diffrand devices without writing and additional code.</p>
+        </div>
+        <pre class="prettyprint linenums:4">&lt;!--Create a simple grid without gutters--&gt;
 &lt;div class=&quot;row&quot;&gt;
-&Tab;&lt;div class=&quot;lg-col-6 panel-primary text-center&quot;&gt;Column 6&lt;/div&gt;
-&Tab;&lt;div class=&quot;lg-col-6 panel-primary text-center&quot;&gt;Column 6&lt;/div&gt;
+  &lt;div class=&quot;sm-col-12 md-col-6 lg-col-3 xl-col-2&quot;&gt;C 1&lt;/div&gt;
+  &lt;div class=&quot;lg-col-2&quot;&gt;Col 2&lt;/div&gt;
+  &lt;div class=&quot;lg-col-3&quot;&gt;Column 3&lt;/div&gt;
+  &lt;div class=&quot;lg-col-4&quot;&gt;Column 4&lt;/div&gt;
+  &lt;div class=&quot;lg-col-2&quot;&gt;Col 2&lt;/div&gt;
+&lt;/div&gt;&Tab;
+</pre>
+        <pre class="prettyprint linenums:12">&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;sm-col-6 md-col-4 md-col-3&quot;&gt;Hello Wolrd&lt;/div&gt;&Tab;
 &lt;/div&gt;
-&lt;div class=&quot;row&quot;&gt;
-&Tab;&lt;div class=&quot;lg-col-1 panel-primary text-center&quot;&gt;C 1&lt;/div&gt;
-&Tab;&lt;div class=&quot;lg-col-2 panel-primary text-center&quot;&gt;Col 2&lt;/div&gt;
-&Tab;&lt;div class=&quot;lg-col-3 panel-primary text-center&quot;&gt;Column 3&lt;/div&gt;
-&Tab;&lt;div class=&quot;lg-col-4 panel-primary text-center&quot;&gt;Column 4&lt;/div&gt;
-&Tab;&lt;div class=&quot;lg-col-2 panel-primary text-center&quot;&gt;Col 2&lt;/div&gt;
-&lt;/div&gt;
-
-
-
 </pre>
       </div>
     </div>
@@ -135,6 +135,25 @@
           <div class="panel-primary text-center">Column 12</div>
         </div>
       </div>
+      <div class="row">
+        <div class="sm-col-12 paper">
+          <h1>Structure your html to have some gutters</h1>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus porro aliquam placeat quod libero, at obcaecati, architecto sunt voluptates, atque, unde sed perspiciatis. Sequi, vitae nisi nulla magni! Provident, inventore.</p>
+        </div>
+        <pre class="prettyprint linenums:1">&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;md-col-6&quot;&gt;
+    &lt;div class=&quot;panel-primary&quot;&gt;
+      &lt;p&gt;content one&Tab;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;md-col-6&quot;&gt;
+    &lt;div class=&quot;panel-primary&quot;&gt;
+      &lt;p&gt;content two&Tab;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+      </div>
     </div>
     <div class="wrapper padding push-and-pull">
       <div class="row">
@@ -186,6 +205,19 @@
           <div class="panel-primary text-center">Column 6</div>
         </div>
       </div>
+      <div class="row">
+        <div class="sm-col-12 paper">
+          <h2>Your columns can also be pushed and pulled depending on device width you selected.</h2>
+          <p>	 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quo, et? Sit itaque fugiat veritatis. Vero excepturi earum quibusdam, sed aperiam explicabo optio illo aliquid. Minus voluptatum iusto, totam odio iste culpa natus placeat officia voluptatibus velit quas molestias sapiente. Porro quidem placeat, est fugiat voluptate velit sequi, repudiandae. Cum, deserunt quia atque dignissimos non ducimus optio temporibus praesentium harum maiores, dolor cumque asperiores adipisci suscipit, quisquam ad repellendus veniam voluptas expedita. Repellat culpa, aliquid libero sint modi dignissimos unde cum dolore dolores eum molestiae at, distinctio voluptatum eligendi illum nihil id quo vitae laborum voluptate dolor atque perferendis. Eveniet tenetur pariatur ipsa molestiae quae voluptatibus hic iste atque deleniti, quas aliquam, perspiciatis velit nesciunt repellat quaerat eos quisquam voluptatem.</p>
+        </div>
+        <pre class="prettyprint linenums:4">&lt;!--Create a simple grid without gutters--&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;md-col-4 md-offset-4&quot;&gt;[...]&lt;/div&gt;
+  &lt;div class=&quot;md-col-4 push-right&quot;&gt;[...]&lt;/div&gt;
+  &lt;div class=&quot;md-col-4 push-left-4&quot;&gt;[...]&lt;/div&gt;
+&lt;/div&gt;&Tab;
+</pre>
+      </div>
     </div>
   </div>
   <footer class="footer">
@@ -193,15 +225,24 @@
       <p>Designed and developed by <a href="#">DesignByCode</a></p>
     </div>
   </footer>
+  <button class="btn-scrollToTop">Top</button>
   <script src="js/app.js"></script>
   <script>
     $('#menu-button').offCanvasMenu();
     $('window').smoothMouseScroll({
-    	'speed' : 700,
-    	'distance': 250,
-    	'easing': 'easeOutQuad'
+    	'speed' : 600,
+    	'distance': 350,
+    	'easing': 'easeOutSine'
     	});
+    	
+    $('.btn-scrollToTop').scrollToTop({
+    		'offsetTop':        0,
+    		'easing': 					'easeOutBounce',
+    		'speed': 						1500,
+    		'fadeSpeed':        300,
+    		'revealPosistion':  250
+    	});	
   </script>
   <script src="prettify/src/prettify.js"></script>
-  <script>prettyPrint();	</script>
+  <script>prettyPrint();</script>
 </body>

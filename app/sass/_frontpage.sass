@@ -44,6 +44,7 @@ a:active
 		size: 450px 397px
 	animation: movebackground 15s linear infinite
 
+
 @keyframes movebackground
 	from
 		background-position: 0px bottom
@@ -178,9 +179,10 @@ button.callback
 
 
 
-.footer
+footer.footer
 	color: #eee
 	padding: 100px
+	//clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100%)
 	background:
 		color: color(darkgray)
 
@@ -264,3 +266,39 @@ button.callback
 	[class*="push"] .panel-primary
 		background: color(pink)
 		color: color(white)
+
+
+
+.parallax-frame
+	height: 300px
+	width: 100%
+	overflow: hidden
+	position: relative
+
+.parallax-text
+	position: absolute
+	color: color(white)
+	z-index: 10
+	top: 25%
+	left: 50%
+	transform: translateX(-50%)
+	display: block
+
+.parallax-bg
+	height: 450px
+	display: block
+	position: relative
+	background:
+		image: url(../img/parallax/5.jpg)
+		size: cover
+
+	&::after
+		content: ''
+		background: rgba(color(black), 0.75)
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		z-index: 1
+		display: block

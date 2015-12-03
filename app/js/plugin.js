@@ -46,9 +46,7 @@
       var self = $(this);
 
       if(settings.isOpen){
-        // self.css({
-        //   'transform' : 'translate3d(0px,0,0)'
-        // });
+
         $(settings.menu).css({
           'transform' : 'translate3d('+-settings.menuWidth +'px,0,0)'
         });
@@ -61,9 +59,6 @@
         settings.isOpen = false;
 
       }else{
-        // self.css({
-        //   'transform' : 'translate3d('+ (settings.menuWidth - 110 )  +'px,0,0)'
-        // });
         $(settings.menu).css({
           'transform' : 'translate3d(0px,0,0)'
         });
@@ -77,9 +72,7 @@
       }
     };
     $('#close-nav').on('click', openMenu);
-
     this.on('click', openMenu);
-
     return this;
 
   };//end of plugin
@@ -88,9 +81,9 @@
     var opt;
 
     opt = $.extend({
-      'speed': 500,
+      'speed':    500,
       'distance': 250,
-      'easing': 'swing'
+      'easing':   'swing'
     }, options);
 
       	if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
@@ -119,6 +112,106 @@
     return this;
 
   };
+
+  $.fn.scrollToTop = function(options){
+    var self = $(this),
+        opt,
+        render,
+        scrollP,
+        win = $(window);
+
+    opt = $.extend({
+      'speed':                1000,
+      'revealPosistion':      200,
+      'offsetTop':            0,
+      'fadeSpeed':            300,
+      'easing':               'swing',
+      'callback':             'function(){}'
+    }, options);
+
+    render = function(){
+      scrollP = win.scrollTop();
+      if(scrollP < opt.revealPosistion){
+        self.fadeOut(opt.fadeSpeed);
+      }else{
+        self.fadeIn(opt.fadeSpeed);
+      }
+    };
+
+    self.on('click', function(){
+      $('html, body').stop().animate({'scrollTop': opt.offsetTop}, opt.speed, opt.easing, opt.callback);
+
+    });
+
+
+    (function loop(){
+			requestAnimationFrame(loop);
+			render();
+		})();
+
+    return self;
+
+  }; // end of scrollToTop plugin
+
+  $.fn.parallax = function(options){
+
+		var opt,
+				self = $(this),
+				i,
+				par,
+				top,
+				offset,
+				scroll,
+				hi,
+				dHeight,
+				transform,
+				offsets,
+        render,
+        winSize,
+        fullScreen;
+
+		opt = $.extend({
+      'parallaxFrame':  '.parallax-li',
+      'parallaxWindow': '.parallax-background'
+
+		}, options);
+
+		var parallax = self,
+				parallaxBg = parallax.find(opt.parallaxWindow),
+				win = $(window),
+				FrameHeight = parallaxBg.eq(0).closest(opt.parallaxFrame).height(),
+				DiffInHeight = parallaxBg.eq(0).height() - FrameHeight,
+				FrameCount = parallaxBg.length;
+
+        console.log(FrameCount);
+
+		offsets = parallaxBg.get().map(function(div){
+			return $(div).offset();
+		});
+
+
+		render = function(){
+			top = win.scrollTop();
+			// Parralax effect
+			for( i = 0; i < FrameCount; i++ ){
+				par = parallaxBg[i];
+				offset = top - offsets[i].top;
+				scroll = ~~(offset / FrameHeight * DiffInHeight);
+				transform = 'translate3d(0px,'+scroll+'px, 0px)';
+				par.style.webkitTransform = transform;
+				par.style.MozTransform = transform;
+				par.style.msTransform = transform;
+				par.style.OTransform = transform;
+				par.style.transform = transform;
+			}// end for loop
+		};
+		(function loop(){
+			requestAnimationFrame(loop);
+			render();
+		})();
+    return self;
+	}; //end of plugin
+
 
 
 

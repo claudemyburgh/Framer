@@ -49,7 +49,7 @@ gulp.task('sass', function(){
 			includePaths : [
 				paths.bower + '/normalize-css/'
 			],
-      outputStyle: 'compressed'
+      outputStyle: 'expanded'
 		}).on('error', sass.logError))
 		.pipe(autoprefixer())
 		.pipe(gulp.dest(paths.build + '/css'))
@@ -68,7 +68,7 @@ gulp.task('scripts', function(){
   ])
   .pipe(plumber())
   .pipe(concat('app.js'))
-  .pipe(uglify())
+  //.pipe(uglify())
   .pipe(gulp.dest(paths.build + '/js'))
   .pipe(reload({stream: true}));
 
