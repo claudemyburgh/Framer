@@ -39,7 +39,26 @@ body
 
 			.row
 				.lg-col-12.panel-primary.text-center Column 12
-				
+
+			.row
+				.sm-col-12.paper
+					h1 Structure your html to create a mobile first grid layout
+					p By default Framer is a 12 column grid, but this can easaliy be changed to a 16 column grid in seconds. css classes can be stacked to create multipale layout for diffrand devices without writing and additional code.
+
+				pre.prettyprint(class="linenums:4").
+					&lt;!--Create a simple grid without gutters--&gt;
+					&lt;div class=&quot;row&quot;&gt;
+					  &lt;div class=&quot;sm-col-12 md-col-6 lg-col-3 xl-col-2&quot;&gt;C 1&lt;/div&gt;
+					  &lt;div class=&quot;lg-col-2&quot;&gt;Col 2&lt;/div&gt;
+					  &lt;div class=&quot;lg-col-3&quot;&gt;Column 3&lt;/div&gt;
+					  &lt;div class=&quot;lg-col-4&quot;&gt;Column 4&lt;/div&gt;
+					  &lt;div class=&quot;lg-col-2&quot;&gt;Col 2&lt;/div&gt;
+					&lt;/div&gt;&Tab;
+
+				pre.prettyprint(class="linenums:12").
+					&lt;div class=&quot;row&quot;&gt;
+					  &lt;div class=&quot;sm-col-6 md-col-4 md-col-3&quot;&gt;Hello Wolrd&lt;/div&gt;&Tab;
+					&lt;/div&gt;
 
 		.wrapper.padding
 			.row
@@ -83,6 +102,25 @@ body
 				.lg-col-12
 					.panel-primary.text-center Column 12
 
+			.row
+				.sm-col-12.paper
+					h1 Structure your html to have some gutters
+					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus porro aliquam placeat quod libero, at obcaecati, architecto sunt voluptates, atque, unde sed perspiciatis. Sequi, vitae nisi nulla magni! Provident, inventore.
+
+				pre.prettyprint(class="linenums:1").
+					&lt;div class=&quot;row&quot;&gt;
+					  &lt;div class=&quot;md-col-6&quot;&gt;
+					    &lt;div class=&quot;panel-primary&quot;&gt;
+					      &lt;p&gt;content one&Tab;&lt;/p&gt;
+					    &lt;/div&gt;
+					  &lt;/div&gt;
+					  &lt;div class=&quot;md-col-6&quot;&gt;
+					    &lt;div class=&quot;panel-primary&quot;&gt;
+					      &lt;p&gt;content two&Tab;&lt;/p&gt;
+					    &lt;/div&gt;
+					  &lt;/div&gt;
+					&lt;/div&gt;
+
 		.wrapper.padding.push-and-pull
 			.row
 				.sm-col-12.text-center
@@ -124,12 +162,23 @@ body
 				.lg-col-6.push-right
 					.panel-primary.text-center Column 6
 
+			.row
+				.sm-col-12.paper
+					h2 Your columns can also be pushed and pulled depending on device width you selected.
+					p 	 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quo, et? Sit itaque fugiat veritatis. Vero excepturi earum quibusdam, sed aperiam explicabo optio illo aliquid. Minus voluptatum iusto, totam odio iste culpa natus placeat officia voluptatibus velit quas molestias sapiente. Porro quidem placeat, est fugiat voluptate velit sequi, repudiandae. Cum, deserunt quia atque dignissimos non ducimus optio temporibus praesentium harum maiores, dolor cumque asperiores adipisci suscipit, quisquam ad repellendus veniam voluptas expedita. Repellat culpa, aliquid libero sint modi dignissimos unde cum dolore dolores eum molestiae at, distinctio voluptatum eligendi illum nihil id quo vitae laborum voluptate dolor atque perferendis. Eveniet tenetur pariatur ipsa molestiae quae voluptatibus hic iste atque deleniti, quas aliquam, perspiciatis velit nesciunt repellat quaerat eos quisquam voluptatem.
 
 
+				pre.prettyprint(class="linenums:4").
+					&lt;!--Create a simple grid without gutters--&gt;
+					&lt;div class=&quot;row&quot;&gt;
+					  &lt;div class=&quot;md-col-4 md-offset-4&quot;&gt;[...]&lt;/div&gt;
+					  &lt;div class=&quot;md-col-4 push-right&quot;&gt;[...]&lt;/div&gt;
+					  &lt;div class=&quot;md-col-4 push-left-4&quot;&gt;[...]&lt;/div&gt;
+					&lt;/div&gt;&Tab;
 
 	include inc/footer.jade
-	
+
 	script(src="prettify/src/prettify.js")
-	
+
 	script.
-		//prettyPrint();	
+		prettyPrint();

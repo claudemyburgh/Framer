@@ -4,12 +4,21 @@
     <p>Designed and developed by <a href="#">DesignByCode</a></p>
   </div>
 </footer>
+<button class="btn-scrollToTop">Top</button>
 <script src="js/app.js"></script>
 <script>
   $('#menu-button').offCanvasMenu();
   $('window').smoothMouseScroll({
-  	'speed' : 700,
-  	'distance': 250,
-  	'easing': 'easeOutQuad'
+  	'speed' : 600,
+  	'distance': 350,
+  	'easing': 'easeOutSine'
   	});
+  	
+  $('.btn-scrollToTop').scrollToTop({
+  		'offsetTop':        0,
+  		'easing': 					'easeOutBounce',
+  		'speed': 						1500,
+  		'fadeSpeed':        300,
+  		'revealPosistion':  250
+  	});	
 </script>
