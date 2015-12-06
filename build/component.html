@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="prettify/src/prettify.css">
+  <link rel="stylesheet" href="prettify/styles/desert.css">
 </head>
 <body>
   <nav class="nav-wrapper"><a href="#" id="close-nav"><i class="fa fa-fw fa-close"></i></a>
@@ -13,7 +13,7 @@
       <ul>
         <li><a href="index.html"><i class="fa fa-fw fa-star-o"></i> <span>Home</span></a></li>
         <li><a href="grid.html"><i class="fa fa-fw fa-columns"></i> <span>Layout</span></a></li>
-        <li><a href="component.html"><i class="fa fa-fw fa-bell-o"></i> <span>Componants</span></a></li>
+        <li><a href="componants_layout.html"><i class="fa fa-fw fa-bell-o"></i> <span>Componants</span></a></li>
         <li><a href="#"><i class="fa fa-fw fa-connectdevelop"></i> <span>Sections</span></a></li>
         <li><a href="test.html"><i class="fa fa-fw fa-cloud"></i> <span>Box Layout</span></a></li>
         <li><a href="parallax.html"><i class="fa fa-fw fa-arrows"></i> <span>Parallax</span></a></li>
@@ -30,213 +30,124 @@
   <nav class="navbar navbar-fixed">
     <button id="menu-button">Menu</button>
   </nav>
-  <div class="main-wrapper">
-    <div class="full-width-primary padding">
-      <div class="wrapper">
-        <div class="row">
-          <div class="sm-col-12 text-center">
-            <h1>UI Component</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="wrapper padding">
-      <div class="row">
-        <div class="sm-col-12">
-          <h2 class="text-center">Buttons</h2>
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="lg-col-6"><a href="#" class="btn">Button</a><a href="#" class="btn secondary-btn">Button</a><a href="#" class="btn primary-btn">Button</a></div>
-        <div class="lg-col-6"><a href="#" class="btn rounded-btn">Button</a><a href="#" class="btn primary-btn rounded-btn">Button</a><a href="#" class="btn secondary-btn rounded-btn">Button</a></div>
-      </div>
+  <header class="heading-box">
+    <div class="wrapper">
       <div class="row text-center padding">
-        <div class="lg-col-6"><a href="#" class="btn">Button <span class="btn-with-icon"><i class="fa fa-download"></i></span></a><a href="#" class="btn secondary-btn">Button <span class="btn-with-icon"><i class="fa fa-download"></i></span></a><a href="#" class="btn primary-btn">Button <span class="btn-with-icon"><i class="fa fa-download"></i></span></a></div>
-        <div class="lg-col-6"><a href="#" class="btn rounded-btn">Button</a><a href="#" class="btn primary-btn rounded-btn">Button</a><a href="#" class="btn secondary-btn rounded-btn">Button</a></div>
+        <h1>Buttons </h1>
       </div>
-      <div class="row text-center">
-        <div class="lg-col-6"><a href="#" class="btn-small">Button</a><a href="#" class="btn secondary-btn">Button</a><a href="#" class="btn-large primary-btn">Button</a></div>
-        <div class="lg-col-6"><a href="#" class="btn-small rounded-btn">Button</a><a href="#" class="btn primary-btn rounded-btn">Button</a><a href="#" class="btn-large secondary-btn rounded-btn">Button</a></div>
+    </div>
+  </header>
+  <div class="wrapper padding"> 	
+    <div class="row">
+      <div class="md-col-4 button-spacer"> 
+        <button class="btn">Button	</button>
+        <button class="btn btn-primary">Button	</button>
+        <button class="btn btn-secondary">Button	</button>
+      </div>
+      <div class="md-col-4 button-spacer">	
+        <button class="btn btn-rounded">Button	</button>
+        <button class="btn btn-primary btn-rounded">Button	</button>
+        <button class="btn btn-secondary btn-rounded">Button	</button>
+      </div>
+      <div class="md-col-4 button-spacer">	
+        <button class="btn btn-round"><i class="fa fa-fw fa-star-o"></i></button>
+        <button class="btn btn-primary btn-round"><i class="fa fa-fw fa-star-o"></i></button>
+        <button class="btn btn-secondary btn-round"><i class="fa fa-fw fa-star-o"></i></button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 paper"> 
+        <h2>	 Lorem ipsum dolor sit amet, consectetur adipisicing elit.	</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet recusandae ipsam minus, tenetur, officia quo est cumque impedit expedita dolorem inventore. Placeat, harum dolores. Quidem molestias voluptatum aperiam, assumenda reiciendis quaerat est, modi nam maxime perspiciatis adipisci labore laudantium omnis dolores accusamus, soluta. Natus voluptas magni cupiditate laudantium quae. Blanditiis consequatur illo necessitatibus, animi excepturi maiores ab porro esse numquam, iusto ipsam dicta ratione reiciendis quam officiis temporibus. Hic ducimus tempore, quia, dolorum repudiandae necessitatibus! Sint rerum earum vel ut architecto inventore laboriosam, ullam assumenda cupiditate consectetur aliquid quibusdam culpa corporis dolorum eos iusto, quasi veritatis consequatur. Dolore, nihil, eligendi!</p>
+      </div>
+    </div>
+    <div class="row"> 
+      <pre class="prettyprint linenums:1 html">&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;md-col-4&quot;&gt; 
+    &lt;!--Standerd Button--&gt;
+    &lt;button class=&quot;btn&quot;&gt;Button&lt;/button&gt;
+    &lt;button class=&quot;btn btn-primary&quot;&gt;Button&lt;/button&gt;
+    &lt;button class=&quot;btn btn-secondary&quot;&gt;Button&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;md-col-4&quot;&gt;&Tab;
+    &lt;!--Rounded Button--&gt;
+    &lt;button class=&quot;btn btn-rounded&quot;&gt;Button&lt;/button&gt;
+    &lt;button class=&quot;btn btn-primary btn-rounded&quot;&gt;Button&lt;/button&gt;
+    &lt;button class=&quot;btn btn-secondary btn-rounded&quot;&gt;Button&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;md-col-4&quot;&gt;&Tab;
+    &lt;!--Round Button--&gt;
+    &lt;button class=&quot;btn btn-round&quot;&gt;&lt;i class=&quot;fa fa-fw fa-star-o&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;button class=&quot;btn btn-primary btn-round&quot;&gt;&lt;i class=&quot;fa fa-fw fa-star-o&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;button class=&quot;btn btn-secondary btn-round&quot;&gt;&lt;i class=&quot;fa fa-fw fa-star-o&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+</pre>
+    </div>
+  </div>
+  <header class="heading-box"> 
+    <div class="wrapper"> 
+      <div class="row text-center padding"> 
+        <h1>Input Fields </h1>
+      </div>
+    </div>
+  </header>
+  <div class="wrapper padding">					
+    <div class="row"> 
+      <div class="md-col-6 md-offset-3 input-fields"> 
+        <div class="row"> 
+          <Input type="text" id="name" placeholder="Enter Name"> </Input>
+        </div>
+        <div class="row"> 
+          <Input type="text" id="name" placeholder="Enter Name"> </Input>
+        </div>
+        <div class="row">	 
+          <Input type="text" id="name" placeholder="Enter Name"> </Input>
+        </div>
+        <div class="row">	 
+          <Input type="text" id="name" placeholder="Enter Name"> </Input>
+        </div>
+        <div class="row"> 
+          <textarea rows="5"> </textarea>
+        </div>
+        <div class="row">
+          <label>
+            <Input type="checkbox">Checkbox </Input>
+          </label>
+          <label>
+            <Input type="checkbox">Checkbox </Input>
+          </label>
+          <label>
+            <Input type="checkbox">Checkbox </Input>
+          </label>
+          <label>
+            <Input type="checkbox">Checkbox </Input>
+          </label>
+        </div>
+        <div class="row"> 
+          <Input type="submit" value="Button" class="btn btn-primary">	</Input>
+        </div>
+      </div>
+      <div class="md-col-12">
+        <pre class="prettyprint linenums:1 html">.spna{
+  color: rd;
+}
+		</pre>
       </div>
     </div>
   </div>
-  <div class="full-width-primary padding">
-    <div class="wrapper">
-      <div class="row">
-        <div class="sm-col-12 text-center">
-          <h1>Input Fields</h1>
-        </div>
+  <header class="heading-box"> 
+    <div class="wrapper"> 
+      <div class="row text-center padding"> 
+        <h1>Input Fields </h1>
       </div>
     </div>
-  </div>
-  <div class="wrapper">
-    <div class="row padding">
-      <div class="lg-col-8 lg-offset-2">
-        <div class="md-col-6">
-          <div class="input-wrap-full">
-            <label>Name</label>
-            <input type="text" placeholder="Name">
-          </div>
-        </div>
-        <div class="md-col-6">
-          <div class="input-wrap-full">
-            <label>Name</label>
-            <input type="text" placeholder="Name">
-          </div>
-        </div>
-        <div class="input-wrap">
-          <label>Name</label>
-          <input type="text" placeholder="Name">
-        </div>
-        <div class="input-wrap">
-          <label>Name</label>
-          <input type="text" placeholder="Name">
-        </div>
-        <div class="input-wrap">
-          <input type="button" value="Button">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="full-width-primary padding">
-    <div class="wrapper">
-      <div class="row">
-        <div class="sm-col-12 text-center">
-          <h1>Masonry Fields</h1>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="wrapper">
-    <div class="rows masonry padding">
-      <div class="sm-col-12 md-col-6 lg-col-4 xl-col-3">
-        <div class="card">
-          <header class="card-header">
-            <h3>Headeing Card</h3>
-          </header>
-          <section class="card-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!</section>
-          <footer class="card-footer"><a class="btn primary-btn href="#">Button</a></footer>
-        </div>
-      </div>
-      <div class="sm-col-12 md-col-6 lg-col-4 xl-col-3">
-        <div class="card">
-          <figure class="card-figure"><a href="#"><img src="img/grid/1.jpg" alt=""></a></figure>
-          <section class="card-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!</section>
-          <footer class="card-footer"><a class="btn primary-btn href="#">Button</a></footer>
-        </div>
-      </div>
-      <div class="sm-col-12 md-col-6 lg-col-4 xl-col-3">
-        <div class="card">
-          <header class="card-header">
-            <h3>Headeing Card</h3>
-          </header>
-          <section class="card-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!</section>
-          <footer class="card-footer"><a class="btn primary-btn href="#">Button</a></footer>
-        </div>
-      </div>
-      <div class="sm-col-12 md-col-6 lg-col-4 xl-col-3">
-        <div class="card">
-          <figure class="card-figure"><img src="img/grid/2.jpg" alt=""></figure>
-          <section class="card-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!</section>
-          <footer class="card-footer"><a class="btn primary-btn href="#">Button</a></footer>
-        </div>
-      </div>
-      <div class="sm-col-12 md-col-6 lg-col-4 xl-col-3">
-        <div class="card">
-          <header class="card-header">
-            <h3>Headeing Card</h3>
-          </header>
-          <section class="card-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!</section>
-          <footer class="card-footer"><a class="btn primary-btn href="#">Button</a></footer>
-        </div>
-      </div>
-      <div class="sm-col-12 md-col-6 lg-col-4 xl-col-3">
-        <div class="card">
-          <figure class="card-figure"><img src="img/grid/3.jpg" alt=""></figure>
-          <section class="card-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!</section>
-          <footer class="card-footer"><a class="btn primary-btn href="#">Button</a></footer>
-        </div>
-      </div>
-      <div class="sm-col-12 md-col-6 lg-col-4 xl-col-3">
-        <div class="card">
-          <figure class="card-figure"><img src="img/grid/4.jpg" alt=""></figure>
-          <header class="card-header">
-            <h3>Headeing Card</h3>
-          </header>
-          <section class="card-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!</section>
-          <footer class="card-footer"><a class="btn primary-btn href="#">Button</a></footer>
-        </div>
-      </div>
-      <div class="sm-col-12 md-col-6 lg-col-4 xl-col-3">
-        <div class="card">
-          <figure class="card-figure"><img src="img/grid/5.jpg" alt=""></figure>
-          <section class="card-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!</section>
-          <footer class="card-footer"><a class="btn primary-btn href="#">Button</a></footer>
-        </div>
-      </div>
-      <div class="sm-col-12 md-col-6 lg-col-4 xl-col-3">
-        <div class="card">
-          <figure class="card-figure"><img src="img/grid/6.jpg" alt=""></figure>
-          <section class="card-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!</section>
-          <footer class="card-footer"><a class="btn primary-btn href="#">Button</a></footer>
-        </div>
-      </div>
-      <div class="sm-col-12 md-col-6 lg-col-4 xl-col-3">
-        <div class="card">
-          <header class="card-header">
-            <h3>Headeing Card</h3>
-          </header>
-          <section class="card-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!</section>
-          <footer class="card-footer"><a class="btn primary-btn href="#">Button</a></footer>
-        </div>
-      </div>
-      <div class="sm-col-12 md-col-6 lg-col-4 xl-col-3">
-        <div class="card">
-          <header class="card-header">
-            <h3>Headeing Card</h3>
-          </header>
-          <figure class="card-figure"><img src="img/grid/7.jpg" alt=""></figure>
-          <section class="card-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!</section>
-          <footer class="card-footer"><a class="btn primary-btn href="#">Button</a></footer>
-        </div>
-      </div>
-      <div class="sm-col-12 md-col-6 lg-col-4 xl-col-3">
-        <div class="card">
-          <figure class="card-figure"><img src="img/grid/8.jpg" alt=""></figure>
-          <section class="card-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!</section>
-          <footer class="card-footer"><a class="btn primary-btn href="#">Button</a></footer>
-        </div>
-      </div>
-      <div class="sm-col-12 md-col-6 lg-col-4 xl-col-3">
-        <div class="card">
-          <figure class="card-figure"><img src="img/grid/9.jpg" alt=""></figure>
-          <section class="card-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!</section>
-          <footer class="card-footer"><a class="btn primary-btn href="#">Button</a></footer>
-        </div>
-      </div>
-      <div class="sm-col-12 md-col-6 lg-col-4 xl-col-3">
-        <div class="card">
-          <figure class="card-figure"><img src="img/grid/10.jpg" alt=""></figure>
-          <section class="card-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!</section>
-          <footer class="card-footer"><a class="btn primary-btn href="#">Button</a></footer>
-        </div>
-      </div>
-      <div class="sm-col-12 md-col-6 lg-col-4 xl-col-3">
-        <div class="card">
-          <figure class="card-figure"><img src="img/grid/11.jpg" alt=""></figure>
-          <section class="card-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!</section>
-          <footer class="card-footer"><a class="btn primary-btn href="#">Button</a></footer>
-        </div>
-      </div>
-      <div class="sm-col-12 md-col-6 lg-col-4 xl-col-3">
-        <div class="card">
-          <header class="card-header">
-            <h3>Headeing Card</h3>
-          </header>
-          <section class="card-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iusto!</section>
-          <footer class="card-footer"><a class="btn primary-btn href="#">Button</a></footer>
-        </div>
-      </div>
+  </header>
+  <div class="wrapper padding">			
+    <div class="row"> 
+      <div class="md-col-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.		</div>
     </div>
   </div>
   <footer class="footer">
@@ -261,7 +172,11 @@
     		'fadeSpeed':        300,
     		'revealPosistion':  250
     	});	
+    
+    
   </script>
+  <script src="prettify/src/prettify.js"></script>
+  <script>prettyPrint();</script>
   <script>
     var $masonry = $('.masonry');
     $masonry.hide();

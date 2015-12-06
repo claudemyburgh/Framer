@@ -1,0 +1,84 @@
+
+
+=make-wrapper($gutter: $gutter-width)
+	margin-left: auto
+	margin-right: auto
+	padding-right: $gutter
+	padding-left: $gutter
+	width: 90%
+	+clearfix
+	@each $breakpoints, $cw in $wrapper-max-widths
+		+media-up($breakpoints)
+			max-width: $cw
+
+
+=make-row($gutter: $gutter-width)
+	margin-left: -($gutter / 2)
+	margin-right: -($gutter / 2)
+	+clearfix
+
+
+//push
+
+=push($name)
+	@if $name == 'left'
+		float: left !important
+	@else if $name == 'right'
+		float: right !important
+
+
+=make-columns( $col-count: $column-count, $gutter: $gutter-width)
+	[class*="col-"]
+		position: relative
+		float: left
+		box-sizing: border-box
+		width: 100%
+		padding:
+			left: $gutter-width / 2
+			right: $gutter-width / 2
+
+	@each $bp in map-keys($breakpoints)
+
+		@for $i from 1 through $column-count
+			@if $bp == sm
+				.col-#{$i},
+				.#{$bp}-col-#{$i}
+					width: 100% / $column-count * $i
+					&:last-child
+						float: right
+					&:first-child
+						float: left
+
+				.#{$bp}-offset-#{$i}
+					margin-left: 100% / 12 * $i
+					float: left !important
+
+				//hide on breakpoint
+				.#{$bp}-hide-#{$i}
+					display: none
+
+				.#{$bp}-show-#{$i}
+					display: block
+
+
+			@else
+				+media-up($bp)
+					.#{$bp}-col-#{$i}
+						width: 100% / $column-count * $i
+
+						&:last-child
+							float: right
+						&:first-child
+							float: left
+
+					.#{$bp}-offset-#{$i}
+						margin-left: 100% / 12 * $i
+						float: left !important
+
+
+					//hide on breakpoint
+					.#{$bp}-hide-#{$i}
+						display: none
+
+					.#{$bp}-show-#{$i}
+						display: block

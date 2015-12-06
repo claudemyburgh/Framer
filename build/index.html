@@ -13,7 +13,7 @@
       <ul>
         <li><a href="index.html"><i class="fa fa-fw fa-star-o"></i> <span>Home</span></a></li>
         <li><a href="grid.html"><i class="fa fa-fw fa-columns"></i> <span>Layout</span></a></li>
-        <li><a href="component.html"><i class="fa fa-fw fa-bell-o"></i> <span>Componants</span></a></li>
+        <li><a href="componants_layout.html"><i class="fa fa-fw fa-bell-o"></i> <span>Componants</span></a></li>
         <li><a href="#"><i class="fa fa-fw fa-connectdevelop"></i> <span>Sections</span></a></li>
         <li><a href="test.html"><i class="fa fa-fw fa-cloud"></i> <span>Box Layout</span></a></li>
         <li><a href="parallax.html"><i class="fa fa-fw fa-arrows"></i> <span>Parallax</span></a></li>
@@ -30,26 +30,48 @@
   <nav class="navbar navbar-fixed">
     <button id="menu-button">Menu</button>
   </nav>
-  
-  
   <div class="parallax-container">
     <div class="parallax-frame">
-      <div class="parallax-bg"></div>
+      <div class="parallax-bg hero-bg"></div>
       <div class="parallax-text">
         <h1>FRAMER.io</h1>
       </div>
     </div>
-  </div>
-  <div class="container padding"> 
-    <div class="row"> 
-      <div class="col-4 md-col-6">
-        <p>	 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ea rem minus eos, molestias, voluptatem est repudiandae laborum? Maxime aperiam quod illo nobis, eos saepe inventore tempore, ipsam accusantium doloremque, fugit quia voluptates in itaque sapiente doloribus! Odio hic laudantium repellat fugit maxime esse, nobis necessitatibus impedit, ut accusamus possimus.</p>
+    <div class="muted">
+      <div class="container">
+        <div class="row">
+          <div class="md-col-4"><i class="fa fa-fw fa-star-o"></i>
+            <h2>Heading text</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, tenetur, in. Omnis doloremque dolorum voluptatibus error fuga saepe harum a corporis alias inventore nesciunt, aliquid id enim officia at eum minima doloribus. Similique dolor sequi, debitis saepe sed ullam rem!</p>
+            <button class="btn">Button</button>
+          </div>
+          <div class="md-col-4"><i class="fa fa-fw fa-star-o"></i>
+            <h2>Heading text</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, tenetur, in. Omnis doloremque dolorum voluptatibus error fuga saepe harum a corporis alias inventore nesciunt, aliquid id enim officia at eum minima doloribus. Similique dolor sequi, debitis saepe sed ullam rem!</p>
+            <button class="btn btn-primary">Button</button>
+          </div>
+          <div class="md-col-4"><i class="fa fa-fw fa-star-o"></i>
+            <h2>Heading text</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, tenetur, in. Omnis doloremque dolorum voluptatibus error fuga saepe harum a corporis alias inventore nesciunt, aliquid id enim officia at eum minima doloribus. Similique dolor sequi, debitis saepe sed ullam rem!</p>
+            <button class="btn btn-secondary">Button</button>
+          </div>
+        </div>
       </div>
-      <div class="col-4 md-col-6">
-        <p>	 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ea rem minus eos, molestias, voluptatem est repudiandae laborum? Maxime aperiam quod illo nobis, eos saepe inventore tempore, ipsam accusantium doloremque, fugit quia voluptates in itaque sapiente doloribus! Odio hic laudantium repellat fugit maxime esse, nobis necessitatibus impedit, ut accusamus possimus.</p>
-      </div>
-      <div class="col-4 md-col-6">
-        <p>	 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ea rem minus eos, molestias, voluptatem est repudiandae laborum? Maxime aperiam quod illo nobis, eos saepe inventore tempore, ipsam accusantium doloremque, fugit quia voluptates in itaque sapiente doloribus! Odio hic laudantium repellat fugit maxime esse, nobis necessitatibus impedit, ut accusamus possimus.</p>
+    </div>
+    <div class="parallax-frame">
+      <div class="parallax-bg ipad-bg"></div>
+    </div>
+    <div class="interSecter">
+      <div class="container">
+        <div class="row">
+          <div class="md-col-4">
+            <image src="img/ui-pack.jpg" class="ui-look"></image>
+          </div>
+          <div class="md-col-8">
+            <h1>Fresh flate ui look</h1>
+            <p>Framer offers you a stack load of fresh looking ui componants that will create a unique stack of componants. 	 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo distinctio error placeat sint aliquam cum aspernatur, cumque optio illum id molestiae veritatis unde temporibus ad nobis ipsa quam facilis illo qui ab, adipisci dicta. Possimus labore, amet quod commodi in minima. Dolorum sed est mollitia, accusamus recusandae non, ullam voluptate cumque voluptatum eligendi delectus provident aliquam laudantium eius explicabo nulla, velit. Sint beatae tempora et reiciendis pariatur, cum vitae quo? Minima nihil vel expedita ipsa doloribus quam delectus culpa quis a eius blanditiis voluptatum dicta, nemo! Nobis, beatae quo illo quam nemo ipsum omnis aut cum tempore dolorem, ducimus. Possimus.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -75,6 +97,10 @@
     		'fadeSpeed':        300,
     		'revealPosistion':  250
     	});	
+    
+    
   </script>
+  <script src="prettify/src/prettify.js"></script>
+  <script>prettyPrint();</script>
   <script>$('.parallax-container').parallax({'parallaxFrame':'.parallax-frame','parallaxWindow':'.parallax-bg'});</script>
 </body>

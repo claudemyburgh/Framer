@@ -1,0 +1,88 @@
+@import "init"
+.dark-bg
+	background: color(darkgray)
+	color: #fff
+
+.row-spacer
+	padding: $gutter-width / 2 0
+
+
+
+
+
+/* Componaent Styles*/
+
+
+.navbar-logo, .navbar-logo a
+	float: left
+	color: $primary-on-text
+	margin: 0
+	padding: 0 14px
+	line-height: $navbar-height
+	&:hover
+		text-decoration: none
+		opacity: 0.8
+
+.navbar-link-wrap
+	float: right
+	overflow: hidden
+	height: $navbar-height
+	background: $primary-color
+	ul
+		list-style: none
+		padding: 0 14px
+		margin: 0
+		li
+			display: block
+			float: left
+
+			a
+				color: color(white)
+				transition: all 0.2s cubic-bezier(0.49,-0.84,0.45,1.85)
+				line-height: $navbar-height
+				display: block
+				padding-left: 14px
+				padding-right: 14px
+				&:hover
+					text-decoration: none
+					background: color(white)
+					color: $primary-color
+			input[type=text]
+				display: block
+				height: $navbar-height
+				border: solid $primary-color 10px
+				&:focus
+					background: #fff
+					color: $primary-color
+		.active
+			a
+				background: color(white)
+				color: $primary-color
+
+
+
+	ul.clone-menu
+		//overflow: hidden
+		li
+			a
+				color: color(white)
+				line-height: $navbar-height
+				display: block
+				padding-left: 14px
+				padding-right: 14px
+				transition: all 0.2s cubic-bezier(0.49,-0.84,0.45,1.85)
+				transform: translateY(-$navbar-height)
+			&:hover
+				a
+					text-decoration: none
+					transform: translateY(0px)
+
+			a.clone-anchor
+				color: color(purple)
+				background: color(white)
+
+		.active
+				a
+					background: color(white)
+					text-decoration: none
+					transform: translateY(0px)

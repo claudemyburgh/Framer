@@ -12624,7 +12624,8 @@ jQuery.extend( jQuery.easing,
  */
 
 
-(function($){
+(function($, window, document, undefined){
+	"use strict";
 
   $.fn.offCanvasMenu = function(opt){
     var settings, snappy, openMenu, overlayPage, closeOverlay;
@@ -12643,7 +12644,7 @@ jQuery.extend( jQuery.easing,
 
 
     snappy = function(){
-      var s        = Snap('#svg-menu'),
+      var s        = new Snap('#svg-menu'),
           path     = s.select('path'),
           myPath   = 'M-1,0h101c0,0-97.833,153.603-97.833,396.167C2.167,627.579,100,800,100,800H-1V0z',
           pathOpen = "M-1,0h101c0,0,0-1,0,395c0,404,0,405,0,405H-1V0z";
@@ -12837,7 +12838,53 @@ jQuery.extend( jQuery.easing,
     return self;
 	}; //end of plugin
 
+	$.fn.equelHeight = function(options){
+		var opt,
+				tallestHeight = 0,
+				self = $(this),
+				$col,
+				elHeight;
+
+		opt = $.extend({
+			'box': '.equelBoxes'
+		}, options);
+		$col = self.find(opt.box);
+
+		$col.each(function(i,el){
+			elHeight = $(el).outerHeight();
+			if(elHeight > tallestHeight){
+				tallestHeight = elHeight;
+			}
+		});
+		$col.animate({'min-height': tallestHeight + 'px'}, 500);
+		return $col;
+	};
+
+	var framer = {
+		init: function(){
+			this.menuClone();
+		},
+		menuClone: function(){
+			var cloneMenu = $('.clone-menu li a');
+			cloneMenu.each(function(i, elem){
+				$(this).before($(elem).clone().addClass('clone-anchor'));
+			});
+		}
+	}; // framer Object
 
 
+	$.fn.Framer = function(options){
+		var opt;
 
-})(jQuery);
+		opt = $.extend({
+
+		}, options);
+
+		this.each(function(){
+			var fram = Object.create(framer);
+			fram.init(options, this);
+		});
+		return this;
+	}; // Framer plugin
+
+})(jQuery, window, document);

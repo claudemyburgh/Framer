@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="prettify/src/prettify.css"/>
 </head>
-<body class="testbody">
+<body class="dark-bg">
   <nav class="nav-wrapper"><a href="#" id="close-nav"><i class="fa fa-fw fa-close"></i></a>
     <div class="icon-list">
       <ul>
@@ -30,33 +31,45 @@
     <button id="menu-button">Menu</button>
   </nav>
   <div class="wrapper padding">
-    <div class="rows">
-      <div class="md-col-4">
-        <div class="paper">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, ut inventore, repudiandae officia ipsa fugit aliquam Laudantium, ut inventore, repudiandae officia ipsa fugit aliquam Laudantium, ut inventore, repudiandae officia ipsa fugit aliquam aperiam velit minus culpa.</div>
+    <div class="row">
+      <div class="col-12">
+        <h2>UI Componants on dark background</h2>
       </div>
-      <div class="md-col-4">
-        <div class="paper">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, ut inventore, repudiandae officia ipsa fugit aliquam Laudantium, ut inventore, repudiandae officia ipsa fugit aliquam aperiam velit minus culpa.</div>
+    </div>
+    <div class="row row-spacer">
+      <div class="col-12"> 
+        <nav class="navbar">
+          <h1 class="navbar-logo"> <a href="#">Framer</a></h1>
+          <div class="navbar-link-wrap">
+            <ul>
+              <li class="active"> <a href="#">Hone </a></li>
+              <li> <a href="#">Services </a></li>
+              <li> <a href="#">About Us </a></li>
+              <li> <a href="#">Contact Us </a></li>
+              <li> 
+                <input type="text" placeholder="Search"/>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-      <div class="md-col-4">
-        <div class="paper">Lorem ipsum dolor sit amet, repudiandae officia ipsa fugit aliquam aperiam velit minus culpa.</div>
-      </div>
-      <div class="md-col-4">
-        <div class="paper">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, ut inventore, repudiandae officia ipsa fugit aliquam aperiam velit minus culpa.</div>
-      </div>
-      <div class="md-col-4">
-        <div class="paper">Lorem ipsum dolor sit amet,officia ipsa fugit aliquam aperiam velit minus culpa.</div>
-      </div>
-      <div class="md-col-4">
-        <div class="paper">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, ut inventore, repudiandae officia ipsa fugit aliquam aperiam velit minus culpa.</div>
-      </div>
-      <div class="md-col-4">
-        <div class="paper">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, ut inventore, repudiandae officia ipsa fugit aliquam aperiam velit minus culpa.</div>
-      </div>
-      <div class="md-col-4">
-        <div class="paper">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, ut inventore, repudiandae officia ipsa  sit amet, consectetur adipisicing elit. Laudantium, ut inventore, fugit aliquam aperiam velit minus culpa.</div>
-      </div>
-      <div class="md-col-4">
-        <div class="paper">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, ut inventore, repudiandae officia ipsa fugit aliquam aperiam velit minus culpa.</div>
+    </div>
+    <div class="row row-spacer">
+      <div class="col-12"> 
+        <nav class="navbar">
+          <h1 class="navbar-logo"> <a href="#">Framer</a></h1>
+          <div class="navbar-link-wrap">
+            <ul class="clone-menu"> 
+              <li class="active"> <a href="#">Hone </a></li>
+              <li> <a href="#">Services </a></li>
+              <li> <a href="#">About Us </a></li>
+              <li> <a href="#">Contact Us </a></li>
+              <li> 
+                <input type="text" placeholder="Search"/>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </div>
   </div>
@@ -87,10 +100,5 @@
   </script>
   <script src="prettify/src/prettify.js"></script>
   <script>prettyPrint();</script>
-  <script>
-    (function(){
-    	var mas = $('.rows').masonry();
-    
-    })();
-  </script>
+  <script>$(window).Framer();</script>
 </body>

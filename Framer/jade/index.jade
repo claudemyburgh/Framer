@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	meta(name="viewport",content="width=device-width, initial-scale=1.0" )
+	title Document
+	link(rel="stylesheet", href="css/style.css")
+	link(rel="stylesheet", href="prettify/src/prettify.css")
+body
+	include inc/navbar.jade
+
+
+
+	.parallax-container
+		.parallax-frame
+			.parallax-bg.hero-bg
+			.parallax-text
+				h1 FRAMER.io
+		.muted
+			.container
+				.row
+					.md-col-4
+						i(class="fa fa-fw fa-star-o")
+						h2 Heading text
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, tenetur, in. Omnis doloremque dolorum voluptatibus error fuga saepe harum a corporis alias inventore nesciunt, aliquid id enim officia at eum minima doloribus. Similique dolor sequi, debitis saepe sed ullam rem!
+						button.btn Button
+					.md-col-4
+						i(class="fa fa-fw fa-star-o")
+						h2 Heading text
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, tenetur, in. Omnis doloremque dolorum voluptatibus error fuga saepe harum a corporis alias inventore nesciunt, aliquid id enim officia at eum minima doloribus. Similique dolor sequi, debitis saepe sed ullam rem!
+						button.btn.btn-primary Button
+					.md-col-4
+						i(class="fa fa-fw fa-star-o")
+						h2 Heading text
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, tenetur, in. Omnis doloremque dolorum voluptatibus error fuga saepe harum a corporis alias inventore nesciunt, aliquid id enim officia at eum minima doloribus. Similique dolor sequi, debitis saepe sed ullam rem!
+						button.btn.btn-secondary Button
+					
+					
+					
+		.parallax-frame
+			.parallax-bg.ipad-bg
+
+		.interSecter
+			.container
+				.row
+					.md-col-4
+						image(src="img/ui-pack.jpg", class="ui-look")
+						
+					.md-col-8
+						h1 Fresh flate ui look
+						p Framer offers you a stack load of fresh looking ui componants that will create a unique stack of componants. 	 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo distinctio error placeat sint aliquam cum aspernatur, cumque optio illum id molestiae veritatis unde temporibus ad nobis ipsa quam facilis illo qui ab, adipisci dicta. Possimus labore, amet quod commodi in minima. Dolorum sed est mollitia, accusamus recusandae non, ullam voluptate cumque voluptatum eligendi delectus provident aliquam laudantium eius explicabo nulla, velit. Sint beatae tempora et reiciendis pariatur, cum vitae quo? Minima nihil vel expedita ipsa doloribus quam delectus culpa quis a eius blanditiis voluptatum dicta, nemo! Nobis, beatae quo illo quam nemo ipsum omnis aut cum tempore dolorem, ducimus. Possimus.
+
+
+
+	include inc/footer.jade
+	script.
+		$('.parallax-container').parallax({'parallaxFrame':'.parallax-frame','parallaxWindow':'.parallax-bg'});

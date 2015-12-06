@@ -1,0 +1,73 @@
+
+.btn
+	position: relative
+	display: inline-block
+	line-height: 3
+	color: color(darkgray) !important
+	background: color(lightgray)
+	border: darken(color(lightgray), 2%) 1px solid
+	outline: none !important
+	padding-left: 24px
+	padding-right: 24px
+	font-weight: bolder
+	text-shadow: color(white) 0 1px 2px
+	+grid-box-shadow
+	cursor: pointer
+	transition: all 0.35s ease-in-out
+	font-family: "Raleway-ExtraLight"
+	letter-spacing: 2px
+
+	&:hover
+		+grid-box-shadow(rgba(black, 0.25), 10px)
+		background: darken(color(lightgray), 5%)
+		text-decoration: none !important
+
+
+
+.btn-primary
+	color: #fff !important
+	background: $primary-color !important
+	border: darken($primary-color, 2%) 1px solid !important
+	text-shadow: color(black) 0 1px 2px !important
+	outline: none !important
+	transition: all 0.35s ease-in-out
+	&:hover
+		+grid-box-shadow(rgba(black, 0.55), 10px)
+		background: darken($primary-color, 5%) !important
+
+
+
+.btn-secondary
+	color: #fff !important
+	background: $secondary-color !important
+	border: darken($secondary-color, 2%) 1px solid !important
+	text-shadow: color(black) 0 1px 2px !important
+	outline: none !important
+	&:hover
+		+grid-box-shadow(rgba(black, 0.55), 10px)
+		background: darken($secondary-color, 5%) !important
+
+
+.btn-rounded
+	border-radius: 50px !important
+
+.btn-round
+	border-radius: 100% !important
+	width: 50px !important
+	height: 50px !important
+	text-align: center !important
+	padding: 0 !important
+
+.btn-scrollToTop
+	position: fixed
+	z-index: 9998
+	top: calc(100% - 70px)
+	left: calc(100% - 70px)
+	width: 50px
+	height: 50px
+	color: #fff
+	border-radius: 100%
+	background: $primary-color
+	border: none
+	outline: none
+	display: none
