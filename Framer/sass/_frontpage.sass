@@ -1,0 +1,216 @@
+
+$cream: #E5D9BE
+
+a:link,
+a:visited,
+a:active
+	color: $primary-color
+	text-decoration: none
+	&:hover
+		text-decoration: underline
+
+.wrapper .row
+	padding-left: 10px
+	padding-right: 10px
+
+.padding
+	padding: 60px 0
+
+.margin
+	margin-top: 30px
+	margin-bottom: 30px
+
+.main-wrapper
+	position: relative
+	transition: all 0.3s ease-in-out
+	transform: translate3d(0px,0,0)
+
+
+body
+	padding-top: $navbar-height
+
+
+img
+	max-width: 100%
+
+
+@for $i from 1 through 6
+	h#{$i}
+		color: $primary-color
+
+/* Header */
+
+.nav-wrapper
+	position: fixed
+	z-index: 999
+	left: 0
+	top: 0
+	width: 270px
+	height: 100%
+	transform: translate3d(-300px,0,0)
+	transition: transform 0.3s
+	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+	background: color(darkgray)
+	box-shadow: rgba(color(black), 5) 0 0 90px
+
+#morph-shape
+	position: absolute
+	top: 0
+	right: -30px
+	width: 100px
+	height: 100%
+	fill: color(darkgray)
+	z-index: -1
+
+
+.morph-shape-shadow
+	box-shadow: color(black) 0 3px 10px
+	transition: all 1s ease-in-out
+
+.icon-list
+	padding: 100px 15px 15px
+
+
+	ul
+		display: block
+		padding: 0
+		margin: 0
+		list-style: none
+		li
+			display: inline-block
+			width: 100%
+			letter-spacing: 1px
+			a
+				padding: 1em
+				text-decoration: none
+				color: #fff
+				display: block
+				text-transform: uppercase
+				font-weight: 300
+				&:hover
+					background: rgba(#fff, 0.25)
+					text-decoration: none
+				span
+					padding-left: 10px
+
+/* end of navigation classes*/
+
+
+
+/* Parallax Front Page*/
+
+.parallax-container
+	background: #fff
+
+.parallax-frame
+	height: 300px
+	width: 100%
+	overflow: hidden
+	position: relative
+
+
+.parallax-bg
+	height: 400px
+.parallax-text
+	position: absolute
+	top: 30%
+	left: 0
+	right: 0
+	bottom: 30%
+	text-align: center
+
+.hero-bg
+	background:
+		image: url(../img/pc.jpg)
+		size: cover
+.ipad-bg
+	background:
+		image: url(../img/ipad.png)
+		color: #fff
+		repeat: no-repeat
+		size: 80%
+		position: center bottom
+.interSecter
+	position: relative
+	z-index: 2
+	background: #fff
+	padding: 60px 0
+	box-shadow: rgba(black, 0.25) 0 0 20px
+
+
+.muted
+	background: color(lightgray)
+	padding: 60px 0
+	color: darken(color(lightgray), 25%)
+	position: relative
+	[class*="col-"]
+		padding-left: 60px
+	i
+		position: absolute
+		left: 0px
+		top: 20px
+		color: $primary-color
+		font-size: 38px
+
+
+.ui-look
+	margin: auto
+	display: block
+
+
+/*  Footer */
+
+footer.footer
+	background: #333
+	color: color(white)
+	padding: 120px 0
+
+
+/* Pre Code */
+pre.prettyprint.html
+	position: relative
+	//margin-top: 50px !important
+	box-sizing: border-box
+	padding-top: 70px !important
+	&::before
+		height: 50px
+		width: 100%
+		content: "html"
+		background: color(darkgray)
+		border-bottom: solid 3px $primary-color
+		display: block
+		color: #fff
+		line-height: 50px
+		padding-left: $gutter-width
+		position: absolute
+		top: 0px
+		box-sizing: border-box
+		left: 0
+		text-transform: uppercase
+		font-weight: 900
+		letter-spacing: 2px
+		font-size: 24px
+
+pre.prettyprint.css
+	position: relative
+	//margin-top: 50px !important
+	box-sizing: border-box
+	padding-top: 70px !important
+	&::before
+		height: 50px
+		width: 100%
+		content: "css"
+		background: color(darkgray)
+		border-bottom: solid 3px $primary-color
+		display: block
+		color: #fff
+		line-height: 50px
+		padding-left: $gutter-width
+		position: absolute
+		top: 0px
+		box-sizing: border-box
+		left: 0
+		text-transform: uppercase
+		font-weight: 900
+		letter-spacing: 2px
+		font-size: 24px

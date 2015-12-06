@@ -1,0 +1,4 @@
+@function color($key)
+	@if map-has-key($color, $key)
+		@return map-get($color, $key)
+	@return null

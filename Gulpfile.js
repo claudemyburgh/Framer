@@ -13,10 +13,10 @@ var gulp         = require('gulp'),
 /* Defined path object */
 var paths = {
   build: 'build',
-  jade:  'app/jade',
-  sass:  'app/sass',
-  js:    'app/js',
-  img:   'app/img',
+  jade:  'Framer/jade',
+  sass:  'Framer/sass',
+  js:    'Framer/js',
+  img:   'Framer/img',
 	bower: 'bower_components'
 };
 
@@ -32,6 +32,7 @@ gulp.task('browserSync', function(){
 
 gulp.task('jade', function(){
 	return gulp.src(paths.jade + '/**/*.jade')
+    .pipe(plumber())
 		.pipe(jade({
       pretty: true
     }))
@@ -71,10 +72,6 @@ gulp.task('scripts', function(){
   //.pipe(uglify())
   .pipe(gulp.dest(paths.build + '/js'))
   .pipe(reload({stream: true}));
-
-
-
-
 });
 
 

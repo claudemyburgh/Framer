@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	meta(name="viewport",content="width=device-width, initial-scale=1.0" )
+	title Document
+	link(rel="stylesheet", href="css/style.css")
+	link(rel="stylesheet", href="prettify/src/prettify.css")
+body.dark-bg
+	include inc/navbar.jade
+	
+	.wrapper.padding
+		.row
+			.col-12
+				h2 UI Componants on dark background
+		.row.row-spacer
+			.col-12 
+				nav.navbar
+					h1.navbar-logo 
+						a(href="#") Framer
+					.navbar-link-wrap
+						ul
+							li.active 
+								a(href="#") Hone 
+							li 
+								a(href="#") Services 
+							li 
+								a(href="#") About Us 
+							li 
+								a(href="#") Contact Us 
+							li 
+								input(type="text", placeholder="Search") 
+								
+		.row.row-spacer
+			.col-12 
+				nav.navbar
+					h1.navbar-logo 
+						a(href="#") Framer
+					.navbar-link-wrap
+						ul.clone-menu 
+							li.active 
+								a(href="#") Hone 
+							li 
+								a(href="#") Services 
+							li 
+								a(href="#") About Us 
+							li 
+								a(href="#") Contact Us 
+							li 
+								input(type="text", placeholder="Search") 
+
+
+
+
+
+
+
+
+
+
+
+	include inc/footer.jade
+	script.
+		$(window).Framer();
