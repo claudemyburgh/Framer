@@ -14,9 +14,9 @@ See [Framer.io](http://framer.io) for documentation, demo and real world project
 
 
 ### Package managers
-Bower: `bower install framer --save`
+Bower: `bower install Framer.io --save`
 
-Npm: `npm install framer --save`
+
 
 ## Layout
 
