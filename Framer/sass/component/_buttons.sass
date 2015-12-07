@@ -1,30 +1,37 @@
 
-.btn
+
+
+button.btn,
+a.btn
 	position: relative
-	display: inline-block
+	display: block
+	float: left
 	line-height: 3
 	color: color(darkgray) !important
 	background: color(lightgray)
 	border: darken(color(lightgray), 2%) 1px solid
 	outline: none !important
-	padding-left: 24px
-	padding-right: 24px
+	padding: 0 24px
 	font-weight: bolder
 	text-shadow: color(white) 0 1px 2px
+	text-align: center
 	+grid-box-shadow
 	cursor: pointer
 	transition: all 0.35s ease-in-out
 	font-family: "Raleway-ExtraLight"
 	letter-spacing: 2px
+	z-index: 1
 
 	&:hover
 		+grid-box-shadow(rgba(black, 0.25), 10px)
 		background: darken(color(lightgray), 5%)
 		text-decoration: none !important
+		z-index: 2
 
 
 
-.btn-primary
+button.btn-primary,
+a.btn-primary
 	color: #fff !important
 	background: $primary-color !important
 	border: darken($primary-color, 2%) 1px solid !important
@@ -37,7 +44,8 @@
 
 
 
-.btn-secondary
+button.btn-secondary,
+a.btn-secondary
 	color: #fff !important
 	background: $secondary-color !important
 	border: darken($secondary-color, 2%) 1px solid !important
@@ -48,17 +56,20 @@
 		background: darken($secondary-color, 5%) !important
 
 
-.btn-rounded
+button.btn-rounded,
+a.btn-rounded
 	border-radius: 50px !important
 
-.btn-round
+button.btn-round,
+a.btn-round
 	border-radius: 100% !important
 	width: 50px !important
 	height: 50px !important
 	text-align: center !important
 	padding: 0 !important
 
-.btn-scrollToTop
+button.btn-scrollToTop,
+a.btn-scrollToTop
 	position: fixed
 	z-index: 9998
 	top: calc(100% - 70px)

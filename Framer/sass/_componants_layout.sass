@@ -1,0 +1,29 @@
+
+.dark-bg
+	background: color(darkgray)
+	color: #fff
+
+.row-spacer
+	padding: $gutter-width / 2 0
+
+.row-spacer-small
+	margin-bottom: $gutter-width / 2
+	+clearfix
+
+
+
+.md-col-4.button-spacers
+	button.btn,
+	a.btn
+		width: calc(100% / 3)
+		margin-bottom: $gutter-width / 2
+		+media-down(md)
+			width: calc(100% / 2)
+			margin-bottom: $gutter-width
+			&:last-child
+				width: 100%
+				margin-bottom: $gutter-width / 2
+
+
+
+/* Componaent Styles*/
