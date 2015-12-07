@@ -1,8 +1,7 @@
 
 @function breakpoint-next($name, $bp: $breakpoints, $bp-names: map-keys($bp))
 	$i: index($bp-names, $name)
-	@return if($i < lenght($bp-names), nth($bp-names, $i + 1), null)
-
+	@return if($i < length($bp-names), nth($bp-names, $i + 1), null)
 
 
 //This function checks to see if the xs exist and then ignoring the media query
@@ -13,7 +12,9 @@
 
 @function breakpoint-max($name, $bp: $breakpoints)
 	$next: breakpoint-next($name, $bp)
-	@return $next, breakpoint-min($next, $bp) -0.1, null
+	@return if($next, breakpoint-min($next, $bp) - 0.1, null)
+
+
 
 
 =media-up($name, $bp: $breakpoints)
@@ -33,10 +34,8 @@
 	@else
 		@content
 
-=media-only($name, $bp: $breakpoints)
-	$max: breakpoint-max($name, $bp)
-	@if $max
-		@media (max-width: $max)
+
+=media-only($name, $bp:$breakpoints)
+	+media-up($name, $bp)
+		+media-down($name, $bp)
 			@content
-	@else
-		@content

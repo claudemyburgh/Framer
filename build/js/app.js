@@ -12860,14 +12860,30 @@ jQuery.extend( jQuery.easing,
 		return $col;
 	};
 
-	var framer = {
+	var fram = {
 		init: function(){
 			this.menuClone();
+			this.navIcon();
 		},
 		menuClone: function(){
 			var cloneMenu = $('.clone-menu li a');
 			cloneMenu.each(function(i, elem){
 				$(this).before($(elem).clone().addClass('clone-anchor'));
+			});
+		},
+		navIcon: function(){
+			// [].slice.call($('.navbar-menu')).forEach(function(e){
+			// 	e.addEventListener('click', function(){
+			// 		var a = $('.navbar-link-wrap').find('a');
+			// 		console.log(e);
+			// 	});
+			// });
+
+
+			$('.navbar').on('click','.navbar-menu', function(e){
+				var self = $(this);
+				var sib = self.parent().find('.navbar-link-wrap');
+				$(sib).slideToggle(300).css('z-index', 99999);
 			});
 		}
 	}; // framer Object
@@ -12875,14 +12891,12 @@ jQuery.extend( jQuery.easing,
 
 	$.fn.Framer = function(options){
 		var opt;
-
 		opt = $.extend({
-
 		}, options);
 
 		this.each(function(){
-			var fram = Object.create(framer);
-			fram.init(options, this);
+			var Fram = Object.create(fram);
+			Fram.init(options, this);
 		});
 		return this;
 	}; // Framer plugin
